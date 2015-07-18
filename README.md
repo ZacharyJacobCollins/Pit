@@ -1,2 +1,2 @@
 # Pit
-Jruby port of Icarus in progress
+Coming soon to do some stuff in Python
