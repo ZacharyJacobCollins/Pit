@@ -1,2 +1,2 @@
 # Pit
-Coming soon to do some stuff in Python
+Working slack bot thats dymanically changes a slack's channel based on conversation topic.
