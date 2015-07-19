@@ -8,12 +8,12 @@ def GetMessages():
     messageJson = json.loads(messageText)
     
     for message in messageJson['messages']:
-        if len(messageList) < 4:
+        if len(messageList) < 5:
             messageList.append(message['text'])
         else:
             break  
         
-    print messageList
+    return messageList
     
 def UpdateChannelName(update):
     urllib2.urlopen("https://slack.com/api/channels.rename?token=xoxp-7542066518-7542253777-7877737223-5f8bd0&channel=C07RQLZDG&name={0}&pretty=1".format(update))
@@ -21,14 +21,4 @@ def UpdateChannelName(update):
     messageText = urllib2.urlopen("https://slack.com/api/channels.history?token=xoxp-7542066518-7542253777-7877737223-5f8bd0&channel=C07RQLZDG&pretty=1").read()
     messageJson = json.loads(messageText)
     timeStamp = messageJson['messages'][0]['ts']
-    urllib2.urlopen("https://slack.com/api/chat.delete?token=xoxp-7542066518-7542253777-7877737223-5f8bd0&ts={0}&channel=C07RQLZDG&pretty=1".format(timeStamp))
-    
-  
-   
-def main():
-   # update = "enter"
-    while True:
-        UpdateChannelName(raw_input())
-    
-    
-main()
+    #urllib2.urlopen("https://slack.com/api/chat.delete?token=xoxp-7542066518-7542253777-7877737223-5f8bd0&ts={0}&channel=C07RQLZDG&pretty=1".format(timeStamp))
