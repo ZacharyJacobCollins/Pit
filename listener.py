@@ -1,5 +1,4 @@
 import urllib2
-<<<<<<< HEAD
 import re
 import json
 import listener
@@ -53,8 +52,7 @@ def GetMessageTimestamp(index):
     
 def DeleteChannelMessage(timeStamp):
     urllib2.urlopen("https://slack.com/api/chat.delete?token=xoxp-7542066518-7542253777-7877737223-5f8bd0&ts={0}&channel=C07RQLZDG&pretty=1".format(timeStamp))
-    
-=======
+
 import json
 from time import sleep
 
@@ -80,4 +78,3 @@ def GetJson(uri):
     messageText = urllib2.urlopen(uri).read()
     messageJson = json.loads(messageText)
     return messageJson
->>>>>>> fa5373ce13370b00d277006aea28d982e1ee2095
