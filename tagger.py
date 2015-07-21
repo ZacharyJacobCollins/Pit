@@ -8,6 +8,7 @@ def findSubject(lines):
         print "messages are empty"
         return None
     for m in lines:
+        m = m.lower()
         nouns = Sentence(m).nouns
         parts = Sentence(m).PartOfSpeech
         print nouns
