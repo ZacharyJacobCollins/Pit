@@ -9,6 +9,9 @@ def findSubject(lines):
         return None
     for m in lines:
         nouns = Sentence(m).nouns
+        parts = Sentence(m).PartOfSpeech
+        print nouns
+        print parts
         if len(nouns) > 0:
             sentences.append(nouns)
     if len(sentences) != 0:
