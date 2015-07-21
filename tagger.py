@@ -8,7 +8,9 @@ def findSubject(lines):
         print "messages are empty"
         return None
     for m in lines:
-        sentences.append(Sentence(m).nouns)
+        nouns = Sentence(m).nouns
+        if len(nouns) > 0:
+            sentences.append(nouns)
     if len(sentences) != 0:
         maxNoun = Counter(list(chain(*sentences))).most_common()[0]
     else:
