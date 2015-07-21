@@ -7,6 +7,7 @@ class Sentence:
             self.PartOfSpeech[tag[0]] = tag[1]
         self.words = s.words
         self.nouns = s.noun_phrases
+    
     def getPos(self,word):
         if word in self.words:
             term = self.PartOfSpeech[word]
