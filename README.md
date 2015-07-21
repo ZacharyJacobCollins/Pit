@@ -1,5 +1,4 @@
 # Fallen
-<<<<<<< HEAD
 Slack Configuration using Natural Language Processing to find the topic of the current conversation- and rename the channel per the subject of conversation.  Plans for fallen include a fully automated conversational bot, that utilizes machine learning and Natural Language Genertion paradigms.
 
 #Phasing
@@ -91,7 +90,6 @@ conversation]
 
 •Profanity Detection: [Creative responses to feeble human statements]
 
-<<<<<<< HEAD
 •Repetition Detection: [Prevents user or machine to repeat statements within n]
 
 •Hypernyms, Holonyms, Synonyms & Antonyms: [Fuzzy channeling & unpredictability]
@@ -101,7 +99,6 @@ within n]
 
 •Hypernyms, Holonyms, Synonyms & Antonyms: [Fuzzy channeling & 
 unpredictability]
->>>>>>> fa5373ce13370b00d277006aea28d982e1ee2095
 
 •Entity Building: [Uses syntax to add references to Foci]
 
@@ -109,7 +106,6 @@ unpredictability]
 
 •Aggressive Questions: [The system asks questions it expects answers to]
 
-<<<<<<< HEAD
 •Aggressive Declarations: [The system makes statements it expects replies to]
 
 •Lies: [When in doubt, the system provides stories to answer questions]
@@ -138,7 +134,6 @@ sentiment]
 
 
 #Home automation/Car automation will include 
->>>>>>> fa5373ce13370b00d277006aea28d982e1ee2095
 
  • Music Service
  
